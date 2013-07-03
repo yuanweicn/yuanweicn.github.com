@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .bundle
 .DS_Store
 .sass-cache
@@ -11,3 +12,9 @@ source/_stash
 source/stylesheets/screen.css
 vendor
 node_modules
+=======
+*.log
+*.pot
+*.pyc
+local_settings.py
+>>>>>>> 08c377c9e5ff14466b179e5d4bb89df82c354ee3
