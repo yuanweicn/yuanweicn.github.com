@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://yuanweicn.github.io/sitemap.xml 
