@@ -7,8 +7,10 @@
 	<meta name="author" content="WY">
 
 	
-	<meta name="description" content="My First Octopress Blog How to blog with Octopress: rake new post[&ldquo;Helllo world&rdquo;]
-create source/post/2013-07-08-Hello-world.markdown Jul &hellip;">
+	<meta name="description" content="My Very First Octopress Blog How to blog with Octopress: Generate a new post: 1
+2
+rake new_post["Hello world"]
+# create source/_post/2013-07-08- &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -84,15 +86,57 @@ create source/post/2013-07-08-Hello-world.markdown Jul &hellip;">
 		
 		<a href="/blog/2013/07/08/hello-world-slash/">
 		
-			Hello World</a>
+			Hello World!</a>
 	</h2>
 	<div class="entry-content">
-		<p><strong>My First Octopress Blog</strong></p>
+		<p><strong>My Very First Octopress Blog</strong></p>
 
 <p>How to blog with Octopress:</p>
 
-<p>rake new post[&ldquo;Helllo world&rdquo;]
-create source/post/2013-07-08-Hello-world.markdown</p>
+<ol>
+<li>Generate a new post:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["Hello world"]
+</span><span class='line'># create source/_post/2013-07-08-Hello-world.markdown</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li><p>Edit the new post with your favorite editor, i.e. vim.</p></li>
+<li><p>Generate the page, preview and deploy to github:</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake preview
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>commit the source:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m 'update message'
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Some tips:</p>
+
+<h3>CodeBlock</h3>
+
+<p>Codeblock will plug formatted codes into your blog.
+Syntex</p>
 
 		
 		
