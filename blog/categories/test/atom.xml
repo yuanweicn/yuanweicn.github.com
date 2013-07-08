@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Test | Blog]]></title>
   <link href="http://yuanweicn.github.io/blog/categories/test/atom.xml" rel="self"/>
   <link href="http://yuanweicn.github.io/"/>
-  <updated>2013-07-08T22:05:37+08:00</updated>
+  <updated>2013-07-08T22:15:48+08:00</updated>
   <id>http://yuanweicn.github.io/</id>
   <author>
     <name><![CDATA[WY]]></name>
@@ -22,9 +22,8 @@
 
 <p>How to blog with Octopress:</p>
 
-<p>rake new post[&ldquo;Helllo world&rdquo;]</p>
-
-<h1>create source/post/2013-07-08-Hello-world.markdown</h1>
+<p>rake new post[&ldquo;Helllo world&rdquo;]
+create source/post/2013-07-08-Hello-world.markdown</p>
 ]]></content>
   </entry>
   
