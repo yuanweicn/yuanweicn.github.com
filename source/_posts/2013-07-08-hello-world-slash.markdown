@@ -1,15 +1,41 @@
 ---
 layout: post
-title: "Hello world"
+title: "Hello world!"
 date: 2013-07-08 21:30
 comments: true
 categories: [Test]
 --- 
-**My First Octopress Blog**
+**My Very First Octopress Blog**
 
 How to blog with Octopress:
 
-rake new post["Helllo world"]
-create source/post/2013-07-08-Hello-world.markdown
+1. Generate a new post:
+{% codeblock %}
+rake new_post["Hello world"]
+# create source/_post/2013-07-08-Hello-world.markdown
+{% endcodeblock %}
+
+2. Edit the new post with your favorite editor, i.e. vim.
+
+3. Generate the page, preview and deploy to github:
+{% codeblock %}
+rake generate
+rake preview
+rake deploy
+{% endcodeblock %}
+
+4. commit the source:
+{% codeblock %}
+git add .
+git commit -m 'update message'
+git push origin source
+{% endcodeblock %}
+
+Some tips:
+
+###CodeBlock
+Codeblock will plug formatted codes into your blog.
+Syntex
+
 
 
