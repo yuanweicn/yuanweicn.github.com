@@ -7,7 +7,7 @@ categories: [Latex]
 
 ---
 
-$$\prod_{p}\frac{1}{1-\frac{1}{p^{s}}} = \sum_{n=1}^{\infty} \frac{1}{n^{s}}$$
+$$\prod_{p}(1-\frac{1}{p^{s}})^{-1} = \sum_{n=1}^{\infty} \frac{1}{n^{s}}$$
 
 Install Kramdown
 {% codeblock %}
