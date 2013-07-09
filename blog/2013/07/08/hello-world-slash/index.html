@@ -24,6 +24,23 @@ rake new_post["Hello world"]
 </head>
 
 
+<!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+
 <body>
 	<header id="header" class="inner"><h1><a href="/">Blog</a></h1>
 <nav id="main-nav"><ul class="main">
@@ -85,49 +102,47 @@ rake new_post["Hello world"]
 <p>How to blog with Octopress:</p>
 
 <ol>
-<li>Generate a new post:</li>
+  <li>Generate a new post:</li>
 </ol>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post["Hello world"]
-</span><span class='line'># create source/_post/2013-07-08-Hello-world.markdown</span></code></pre></td></tr></table></div></figure>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake new_post["Hello world"]
+</span><span class="line"># create source/_post/2013-07-08-Hello-world.markdown</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <ol>
-<li><p>Edit the new post with your favorite editor, i.e. vim.</p></li>
-<li><p>Generate the page, preview and deploy to github:</p></li>
+  <li>
+    <p>Edit the new post with your favorite editor, i.e. vim.</p>
+  </li>
+  <li>
+    <p>Generate the page, preview and deploy to github:</p>
+  </li>
 </ol>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
-</span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate
+</span><span class="line">rake preview
+</span><span class="line">rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <ol>
-<li>commit the source:</li>
+  <li>commit the source:</li>
 </ol>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m 'update message'
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">git add .
+</span><span class="line">git commit -m 'update message'
+</span><span class="line">git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>Some tips:</p>
 
-<h3>CodeBlock</h3>
-
+<h3 id="codeblock">CodeBlock</h3>
 <p>Codeblock will plug formatted codes into your blog.
 Syntex</p>
+
 </div>
 
 

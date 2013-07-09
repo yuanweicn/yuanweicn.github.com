@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Blog]]></title>
   <link href="http://yuanweicn.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://yuanweicn.github.io/"/>
-  <updated>2013-07-09T21:44:45+08:00</updated>
+  <updated>2013-07-09T23:02:23+08:00</updated>
   <id>http://yuanweicn.github.io/</id>
   <author>
     <name><![CDATA[WY]]></name>
@@ -23,41 +23,42 @@
 <p>How to blog with Octopress:</p>
 
 <ol>
-<li><p>Generate a new post:
+  <li>
+    <p>Generate a new post:
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post[&ldquo;Hello world&rdquo;]&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>create source/_post/2013-07-08-Hello-world.markdown&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
-<li><p>Edit the new post with your favorite editor, i.e. vim.</p></li>
-<li><p>Generate the page, preview and deploy to github:
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake new_post[“Hello world”]
+</span><span class='line'># create source/_post/2013-07-08-Hello-world.markdown</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>
+    <p>Edit the new post with your favorite editor, i.e. vim.</p>
+  </li>
+  <li>
+    <p>Generate the page, preview and deploy to github:
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
 </span><span class='line'>rake preview
-</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
-<li><p>commit the source:
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
+  <li>
+    <p>commit the source:
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git add .
-</span><span class='line'>git commit -m &lsquo;update message&rsquo;
-</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p></li>
+</span><span class='line'>git commit -m ‘update message’
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+  </li>
 </ol>
-
 
 <p>Some tips:</p>
 
-<h3>CodeBlock</h3>
-
+<h3 id="codeblock">CodeBlock</h3>
 <p>Codeblock will plug formatted codes into your blog.
 Syntex</p>
+
 ]]></content>
   </entry>
   
