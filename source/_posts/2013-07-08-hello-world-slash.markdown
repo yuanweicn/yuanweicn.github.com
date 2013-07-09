@@ -3,7 +3,7 @@ layout: post
 title: "Hello world!"
 date: 2013-07-08 21:30
 comments: true
-categories: [Test]
+categories: [Octopress]
 --- 
 **My Very First Octopress Blog**
 

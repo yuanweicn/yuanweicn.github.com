@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Working with Mathjax"
+date: 2013-07-09 22:06
+comments: true
+categories: [Latex] 
+
+---
+
+$$\prod_{p}\frac{1}{1-\frac{1}{p^{s}}} = \sum_{n=1}^{\infty} \frac{1}{n^{s}}$$
+
+Install Kramdown
+{% codeblock %}
+gem install kramdown
+{% endcodeblock %}
+
+Change settings in _config.yml.
+markdown: rdiscount --> markdown: kramdown
+
+Change gem 'ridiscount' to gem 'kramdown' in Gemfile.
+
+Put MathJax CDN and configs in source/_layouts/default.html.
+
+{% codeblock lang: html%}
+
+{% endcodeblock %}
+
+本文中的方法来自[Felix's blog](http://www.idryman.org/blog/2012/03/10/writing-math-equations-on-octopress)
