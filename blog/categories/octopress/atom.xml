@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Blog]]></title>
   <link href="http://yuanweicn.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://yuanweicn.github.io/"/>
-  <updated>2013-07-09T23:09:44+08:00</updated>
+  <updated>2013-07-17T22:28:12+08:00</updated>
   <id>http://yuanweicn.github.io/</id>
   <author>
     <name><![CDATA[WY]]></name>
@@ -56,9 +56,13 @@
 <p>Some tips:</p>
 
 <h3 id="codeblock">CodeBlock</h3>
-<p>Codeblock will plug formatted codes into your blog.
+<p><code>Codeblock</code> will plug formatted codes into your blog.
 Syntex</p>
 
+<pre><code>&lt;% codeblock [title] [lang:language] [url] [link text] %&gt;
+code snippet
+&lt;% endcodeblock %&gt;
+</code></pre>
 ]]></content>
   </entry>
   
