@@ -34,8 +34,9 @@ git push origin source
 Some tips:
 
 ###CodeBlock
-Codeblock will plug formatted codes into your blog.
+`Codeblock` will plug formatted codes into your blog.
 Syntex
 
-
-
+	<% codeblock [title] [lang:language] [url] [link text] %>
+	code snippet
+	<% endcodeblock %>
